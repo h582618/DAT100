@@ -11,7 +11,6 @@ public class Oppgave1 {
 		erSortert(tabell1);
 		
 		
-		/*
 		skrivUt(tabell1);
 
 
@@ -29,7 +28,7 @@ public class Oppgave1 {
 		
 	
 		settSammen(tabell1, tabell2);
-		*/
+		
 	}
     // 1a
 	public static void skrivUt(int[] tabell) {

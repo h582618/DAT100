@@ -60,16 +60,43 @@ public class Oppgave2 {
 				System.out.println(k.charAt(((k.length()-1)/2)+1));
 				
 				}
-			else if (k.length() > 3) {
+			else if (k.length() >= 3) {
 				System.out.print(k.charAt((k.length()-2)/2));
 				System.out.print(k.charAt(((k.length()-2)/2)+1));
 				System.out.println(k.charAt(((k.length()-2)/2)+2));
 			}
-		}
+			
+			//2d 
+			
+				
+			}
 		
-		
-//		System.out.println("Mønsteret ditt er " + antall + " ganger i tabellen");
-	//	System.out.print(t.contains("br"));
+	
+		baklengs("test");
+	}
+         
+	
+	
+	public static String baklengs(String k) {
+
+		int c = 1;
+			for(int i=0 ; i <k.length(); i++) {
+				
+				int t = k.length()-c;
+	
+				char b = k.charAt(t);
+
+				c++;
+				System.out.print(b);
+				
+			}
+		return k;
 	}
 
-}
+	
+	}
+//		System.out.println("Mønsteret ditt er " + antall + " ganger i tabellen");
+	//	System.out.print(t.contains("br"));
+	
+
+	
