@@ -67,11 +67,16 @@ public class Oppgave1 {
 			tabelltotal = tabelltotal + e;
 			
 		}
-		System.out.print(tabelltotal);
+		System.out.print(tabelltotal);	
+		
+		
+		
+		
 }
 	//1c 
 	
 	public static boolean finnesTall(int[] tabell,int tall) {
+		
 		
 		boolean funnet = false;
 		
