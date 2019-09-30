@@ -120,7 +120,7 @@ public class Oppgave2 {
 				var1 = temp2;
 				}
 			
-		
+//		
 			}
 		
 		
