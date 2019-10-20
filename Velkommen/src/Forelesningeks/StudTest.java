@@ -1,4 +1,4 @@
-package Uke39;
+package Forelesningeks;
 
 public class StudTest {
 

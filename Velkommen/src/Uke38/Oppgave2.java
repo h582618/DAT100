@@ -12,40 +12,40 @@ public class Oppgave2 {
 	
 		//2a
 		//y streng
-//
-//		String t = showInputDialog("Mønster");
-//		
-//		
-//		int antallord = 5;
-//		String input [];
-//		input = new String[antallord];
-//		for(int i = 0; i <antallord; i++) {
-//		 String s = showInputDialog("Skriv inn String her");
-//		 input[i] = s;
-//		 
-//		}
-//		System.out.print("[");
-//		for(int k = 0; k <input.length; k++) {
-//			System.out.print(input[k]+", ");
-//		}
-//		System.out.println("]");
-//		
-//		
-//	System.out.println("Ditt mønster er " + t +" og er på plass");
-//		//2b
-//	    int plass = 0;
-//	    int antall = 0;
-//		 
-//		for(int k = 0; k < input.length; k++) {
-//			
-//		if( input[k].contentEquals(t)) { 
-//			plass = k;
-//			antall ++;
-//			
-//	       System.out.println((plass+1));
-//	       
-//		}	
-//}
+
+		String t = showInputDialog("Mønster");
+		
+		
+		int antallord = 5;
+		String input [];
+		input = new String[antallord];
+		for(int i = 0; i <antallord; i++) {
+		 String s = showInputDialog("Skriv inn String her");
+		 input[i] = s;
+		 
+		}
+		System.out.print("[");
+		for(int k = 0; k <input.length; k++) {
+			System.out.print(input[k]+", ");
+		}
+		System.out.println("]");
+		
+		
+	System.out.println("Ditt mønster er " + t +" og er på plass");
+		//2b
+	    int plass = 0;
+	    int antall = 0;
+		 
+		for(int k = 0; k < input.length; k++) {
+			
+		if( input[k].contentEquals(t)) { 
+			plass = k;
+			antall ++;
+			
+	       System.out.println((plass+1));
+	       
+		}	
+}
 //		System.out.println("Ditt mønster er " + antall + " ganger i tabellen");
 //		
 ////		2c

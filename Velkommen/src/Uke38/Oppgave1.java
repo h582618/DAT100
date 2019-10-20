@@ -10,6 +10,7 @@ public class Oppgave1 {
 		
 		erSortert(tabell1);
 		
+		skrivUt(tabell1);
 		
 		/*
 		skrivUt(tabell1);
@@ -35,7 +36,12 @@ public class Oppgave1 {
 	public static void skrivUt(int[] tabell) {
 		System.out.print("[ ");
 		for (int i = 0; i < tabell.length; i++) {
-			System.out.print(tabell[i] + ", ");
+			if(i < tabell.length-1) {
+				System.out.print(tabell[i] + ", ");
+			}
+			else {
+				System.out.print(tabell[i]);
+			}
 		}
 		System.out.print("]");
 	}
