@@ -47,5 +47,3 @@ public class Oppgave2uke36 {
 		
 	  }
 	}
-
-
