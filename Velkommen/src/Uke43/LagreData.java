@@ -17,7 +17,6 @@ public class LagreData {
 	public static void main(String[] args) throws IOException {
 //		Åpner filen for skriving
 		String filnavn = "c:/users/matia/documents/timelister/timerlister.csv";
-
 		File fil = new File(filnavn);
 
 		Scanner leser = new Scanner(fil);
@@ -127,13 +126,14 @@ public int toSeconds(String timestr) {
 		}
         
     	
-		public boolean insert(String dato1, String fornavn1, String etternavn1, String hendelser1, String timer1) {
-			Timer time;
-			
-			time = convert(dato1, fornavn1, etternavn1, hendelser1, timer1);
-			
-			return time;
-		}
+//		public boolean insert(String dato1, String fornavn1, String etternavn1, String hendelser1, String timer1) {
+//			Timer time;
+//			
+//			time = convert(dato1, fornavn1, etternavn1, hendelser1, timer1);
+//			
+//			return 
+//			
+//		}
 	
 		
 		
