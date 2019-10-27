@@ -33,7 +33,6 @@ public class Oppgave3_Terningskast {
 			System.out.println("Antall " + i+"-ere" + " " + antall[i]);
 		}
 	}
-
 	
 	public static int random() {
 		
