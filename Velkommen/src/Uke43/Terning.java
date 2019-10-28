@@ -1,6 +1,5 @@
 package Uke43;
 
-import java.io.*;
 import java.util.Random;
 public class Terning {
 
@@ -18,7 +17,6 @@ public class Terning {
 
 	public void trill() {
 		trillet = oye;
-		
 	
 	}
 }

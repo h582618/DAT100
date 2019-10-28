@@ -14,7 +14,6 @@ public class Utskrift {
 		sim.Simulering(100);
 		
 		
-		
 
 	}
 
