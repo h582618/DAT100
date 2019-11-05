@@ -22,4 +22,9 @@ public class Resultat {
 		this.poengSum = poengsum;
 		
 	}
+	
+	public String SkrivUt() {
+		
+		return "Kandidatnr: " + kandidatNr + " Poengsum: " + poengSum;
+	}
 }
