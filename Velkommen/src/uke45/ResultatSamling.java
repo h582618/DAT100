@@ -57,5 +57,16 @@ public class ResultatSamling {
 		}
 	}
 	
+	public boolean slett(int KandidatNr) {
+		int pos = finnPos(KandidatNr);
+		if(pos >= 0 ) {
+			nesteLedige--;
+			tabell[pos] = tabell[nesteLedige];
+			tabell[nesteLedige] = null;
+			return true;	
+		}
+		return false;
+	}
+	
 	
 }

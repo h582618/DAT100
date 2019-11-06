@@ -27,6 +27,7 @@ public class Reperatorer extends Ansatt{
 //		return (getAnsNr()+""+getFornavn()+""+getEtternavn()+" " + getLonn() + produkt);	
 //				
 //	}
+	@Override
 	public String toString() {
 		return super.toString() + " Produkt " + produkt;
 	}

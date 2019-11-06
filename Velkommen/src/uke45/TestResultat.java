@@ -32,9 +32,13 @@ public class TestResultat {
 		System.out.println(a.gSnitt());
 	
 		a.skrivUt();
-	
 		
+		a.slett(23);
+	
+		a.skrivUt();
 
+		
+		System.out.println(a.gSnitt());
 	}
 
 }
