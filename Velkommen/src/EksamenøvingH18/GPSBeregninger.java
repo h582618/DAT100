@@ -1,4 +1,4 @@
-package Eksamenøving;
+package EksamenøvingH18;
 
 public class GPSBeregninger {
 	public double hoyestepunkt(Rute rute) {
