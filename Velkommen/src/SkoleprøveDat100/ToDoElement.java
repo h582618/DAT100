@@ -1,41 +1,40 @@
 package SkoleprøveDat100;
 
 public class ToDoElement {
-	private String Beskrivelse;
-	private int Nummer;
-	private int Prioritet;
+	private String beskrivelse;
+	private int nummer;
+	private int prioritet;
 	
-public ToDoElement(String Beskrivelse, int Nummer, int prioritet) {
-	this.Beskrivelse = Beskrivelse;
-	this.Nummer = Nummer;
-	this.Prioritet = prioritet;
+public ToDoElement(String beskrivelse, int nummer, int prioritet) {
+	this.beskrivelse = beskrivelse;
+	this.nummer = nummer;
+	this.prioritet = prioritet;
 }
 
 public String getBeskrivelse(){
-	return this.Beskrivelse;
+	return beskrivelse;
 }
 public void setBeskrivelse(String beskrivelse) {
-	this.Beskrivelse = beskrivelse;
+	this.beskrivelse = beskrivelse;
 }
 
 public int getNummer() {
-	return this.Nummer;
+	return nummer;
 }
 public void setNummer(int nummer) {
-	this.Nummer = nummer;
+	this.nummer = nummer;
 }
 public int getPrioritet() {
-	return this.Prioritet;
+	return this.prioritet;
 }
 public void setPrioritet(int prioritet) {
-	this.Prioritet = prioritet;
+	this.prioritet = prioritet;
 }
 
+@Override
 public String toString() {
 	
-	System.out.println(this.Beskrivelse + "\n" + "Nummer   : " + this.Nummer + "\n" + "Prioritet: " + this.Prioritet);
-	
-	return this.Beskrivelse + "\n" + "Nummer : " + this.Nummer + "\n" + "Prioritet: " + this.Prioritet;
+	return beskrivelse + "\n" + "Nummer : " + nummer + "\n" + "Prioritet: " + prioritet;
 }
 
 

@@ -11,8 +11,10 @@ public class Oppgave1 {
 		 int b = 4;
 		 int tab[] = {4, 3, 1};
 		 f(b, tab);
+		 
+		 
 		 System.out.println(b + " " + tab[0]);
 
 		 // Kva er verdien av b og tab[0] her?
 		 }
-		}
+}
