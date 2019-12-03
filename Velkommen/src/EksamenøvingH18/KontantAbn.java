@@ -1,4 +1,4 @@
-package Eksamenøving;
+package EksamenøvingH18;
 // e
 public abstract class KontantAbn extends Abonnement{
 	private double balanse;

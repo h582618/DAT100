@@ -18,7 +18,7 @@ public class GPSBeregninger {
 		Punkt[] tab = rute.komrpimer();
 		double lengde = 0;
 		for(int i = 0; i < tab.length -1; i++) {
-			lengde += avstand(tab[i], tab[i+1]);
+//			lengde += avstand(tab[i], tab[i+1]);
 			
 		}
 		return lengde;

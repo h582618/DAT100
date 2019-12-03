@@ -1,4 +1,4 @@
-package Eksamenøving;
+package EksamenøvingH18;
 
 public class Main {
 
