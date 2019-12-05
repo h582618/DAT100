@@ -33,11 +33,11 @@ public class Videoarkiv {
 		
 		System.out.println("Produsent " + produsent + " sine filmer");
 		
-		String titler = null;
+		String titler = ": ";
 		int antallF = 0;
 		
 		for(int i = 0; i < antall; i++) {
-			if(vTab[i].getProdusent().contentEquals(produsent)) {
+			if(vTab[i] != null && vTab[i].getProdusent().contentEquals(produsent)) {
 				titler += vTab[i].getTittel();
 				titler += ", ";
 				antallF++;
@@ -50,12 +50,19 @@ public class Videoarkiv {
 	public void slett(String tittel) {
 		
 		for(int i = 0; i < antall; i++) {
-			if(vTab[i].getTittel() == tittel && vTab[i].getTittel() != null) {
-				vTab[i] = vTab[antall];
-				vTab[antall] = null;
+			if(vTab[i].getTittel().contentEquals(tittel) && vTab[i].getTittel() != null) {
+				vTab[i] = null;
+				vTab[i] = vTab[antall-1];
+				vTab[antall-1] = null;
+				antall--;
 				return;
 			}
 		}
 		System.out.println("Finner ikke Tittel");
+	}
+	public void skrivUt() {
+		for(int i = 0; i < vTab.length; i++) {
+			System.out.println(vTab[i]);
+		}
 	}
 }
