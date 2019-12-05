@@ -10,7 +10,6 @@ public class Graf {
 //	a
 	public boolean erNaboer(int u, int w) {
 		return nabomatrise[u][w];
-
 	}
 //  b
 	public int grad(int v) {

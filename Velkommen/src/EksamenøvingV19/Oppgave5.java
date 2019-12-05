@@ -29,7 +29,6 @@ public class Oppgave5 {
 			} else {
 				fo.put(e, k+1);
 			}
-			
 		}
 		
 		

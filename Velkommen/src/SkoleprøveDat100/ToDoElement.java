@@ -37,7 +37,6 @@ public String toString() {
 	return beskrivelse + "\n" + "Nummer : " + nummer + "\n" + "Prioritet: " + prioritet;
 }
 
-
 }
 
 
