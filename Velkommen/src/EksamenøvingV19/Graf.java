@@ -15,7 +15,7 @@ public class Graf {
 	public int grad(int v) {
 		int teller = 0;
 
-		for (int i = 0; i < nabomatrise[v].length; i++) {
+		for (int i = 0; i < nabomatrise.length; i++) {
 			if (nabomatrise[v][i]) {
 				teller++;
 			}

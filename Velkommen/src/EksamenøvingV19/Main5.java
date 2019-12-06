@@ -50,6 +50,10 @@ public class Main5 {
 		System.out.println(ord +" har frekvens : " + frekvens);
 		}
 		tastatur.close();
+		
+
+		
+	
 
 		
 // b
