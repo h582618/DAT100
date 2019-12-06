@@ -40,7 +40,8 @@ public class Videoarkiv {
 		for (int i = 0; i < antall; i++) {
 			if (vTab[i] != null && vTab[i].getProdusent().contentEquals(produsent)) {
 				titler += vTab[i].getTittel();
-				titler += ", ";
+				if(i < antall-1)
+						titler += ", ";
 				antallF++;
 			}
 		}

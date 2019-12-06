@@ -5,6 +5,7 @@ import java.util.*;
 public class Main2 {
 
 	public static void main(String[] args) {
+		Innlegg innlegg = null;
 		Scanner tastatur = new Scanner(System.in);	
 		
 		System.out.println("Bruker");
@@ -13,12 +14,28 @@ public class Main2 {
 		System.out.println("Dato");
 		String dato = tastatur.nextLine();
 		
-		System.out.println("Url");
-		String url = tastatur.nextLine();
+		System.out.println("1: Bilde \n2: Tekst \n Valg? ");
+		int valg = tastatur.nextInt();
 		
 		
-		Bilde b1 = new Bilde(bruker,dato,url);
+		switch(valg) {
+		case 1: 
+			System.out.println("Du har valgt bilde");
+			String url = tastatur.nextLine();
+			innlegg = new Bilde(bruker,dato,url);
+			break;
+		case 2: 
+			System.out.println("Du har valgt tekst");
+			String tekst = tastatur.nextLine();
+			innlegg = new Tekst(bruker,dato,tekst);
+			break;
+		default : 
+			System.out.println("Feilmelding1");
+		}
 		
-		b1.skrivUt();
+		if(innlegg != null) {
+			innlegg.skrivUt();
+		}
+		
 	}
 }

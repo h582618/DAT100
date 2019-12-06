@@ -37,6 +37,6 @@ public class Video {
 		int minutt = sekund / 60;
 		int rest = sekund % 60;
 		
-		return "Tittel: " + tittel + ", produsent: " + produsent + ". Tid:" + minutt +"."+rest;
+		return String.format("Tittel: %s, Produsent: %s, Tid: %d.%02d", tittel, produsent, minutt, rest);
 	}
 }
