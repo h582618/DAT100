@@ -1,20 +1,21 @@
 package EksamenøvingH18_2;
 
 public abstract class MaanedAbn extends Abonnement {
-	private int[] gratis;
+	private Abonnement[] gratis;
 	
-	public MaanedAbn(String fødselsnummer, int telefonnummer,double minuttpris) {
-		super(fødselsnummer,telefonnummer,minuttpris);
+	public MaanedAbn(String navn, String fødselsnummer, int telefonnummer,double minuttpris) {
+		super(navn, fødselsnummer,telefonnummer,minuttpris);
 		
-		gratis = new int [4];
+		gratis = new Abonnement [4];
 		
 	}
+	@Override
 	public double pris(int tn, double samtalelengde) {
 		
 		double pris = 0;
 		
-		for(int e : gratis) {
-			if(e == tn) {
+		for(Abonnement e : gratis) {
+			if(e.getTelefonnummer() == tn && e != null) {
 				return pris;
 			}
 		}

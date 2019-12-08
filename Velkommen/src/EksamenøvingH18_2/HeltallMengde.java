@@ -4,8 +4,7 @@ public class HeltallMengde {
 	private boolean [] mengde;
 
 	public HeltallMengde(int n ) {
-		boolean [] hMengde = new boolean[n];
-		mengde = hMengde;
+		mengde = new boolean[n];
 	
 		
 	}
@@ -13,24 +12,27 @@ public class HeltallMengde {
 	public String toString() {
 		String s = "{";
 		
+		boolean forste = true;
+		
 		for(int i = 0; i < mengde.length; i++) {
-			if(mengde[i] && i != mengde.length-1) {
-				s += (i+", ");
-			}else if (mengde[i]){
+			if(mengde[i] && (!forste) ) {
+				s += (", " + i);
+			}else if (mengde[i] && forste){
 				s += (i);
+				forste = false;
 			}
-			s += "}";
 		}
+		s += "}";
 		return s;
 		
 	}
 	public boolean erMed(int t) {
 		
-		try {
-		return(mengde[t]);
-		} catch (RuntimeException e) {
-			 System.out.println("Ikke en gyldig posisjon");
-			 return false;
+		if(t >= 0 && t < mengde.length) {
+			return(mengde[t]);	
+		} 
+		else{
+		throw new RuntimeException("Ikke en gyldig posisjon"); 
 		}
 		
 	}
@@ -38,11 +40,13 @@ public class HeltallMengde {
 		mengde[t]=true;
 	}
 	public boolean erDelmengde(int [] itab) { 
+		
 		for(int i = 0; i < itab.length; i++) {
-			if(!mengde[itab[i]]);
+			if(!mengde[itab[i]]) {
 				return false;
-			}
-		     return true;
+			} 
+	}
+		  return true;
 	}
 	public void komplement() {
 		

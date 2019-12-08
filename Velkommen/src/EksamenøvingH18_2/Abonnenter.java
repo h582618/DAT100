@@ -10,15 +10,16 @@ public class Abonnenter {
 	}
 
 	public double finnPris(int tlfnr1, int tlfnr2, int lengde) {
-		double pris = 0.0;
-
+		
+		Double pris = 0.0;
+		
 		Abonnement abb1 = abonnenter.get(tlfnr1);
 		Abonnement abb2 = abonnenter.get(tlfnr2);
-
-		if (abb1 != null & abb2 != null) {
+		
+		if(abb1 != null & abb2!= null) {
 			pris = abb1.pris(tlfnr2, lengde);
 		}
 		return pris;
-
+		
 	}
 }

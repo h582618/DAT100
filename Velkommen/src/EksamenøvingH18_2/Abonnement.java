@@ -4,11 +4,13 @@ public abstract class Abonnement {
 	private String fødselsnummer;
 	private int telefonnummer;
 	private double minuttpris;
+	private String navn;
 	
-	public Abonnement(String fn, int tn, double mp) {
+	public Abonnement(String navn, String fn, int tn, double mp) {
 		fødselsnummer = fn;
 		telefonnummer = tn;
 		minuttpris = mp;
+		this.navn = navn;
 	}
 	
 	public String getFødselsnummer() {
@@ -32,6 +34,4 @@ public abstract class Abonnement {
 	
 	public abstract double pris(int tn, double samtalelengde);
 	
-	
-
 }
