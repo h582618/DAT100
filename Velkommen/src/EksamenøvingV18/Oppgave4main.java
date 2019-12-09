@@ -10,7 +10,7 @@ public class Oppgave4main {
 //		b1.visTilstand();
 		
 //		b1.plasserBrikke(5, 'G');
-//		b1.visTilstand();
+		b1.visTilstand();
 		
 		System.out.println(b1.hvilkenRekke(5));
 //		

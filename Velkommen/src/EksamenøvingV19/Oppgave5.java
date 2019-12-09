@@ -17,10 +17,10 @@ public class Oppgave5 {
 		listeAvOrd.add("det");
 		listeAvOrd.add("det");
 //		a
-		Scanner tastatur = new Scanner(System.in);
-		System.out.println("Ord du vil vite frekvens for?");
+//		Scanner tastatur = new Scanner(System.in);
+//		System.out.println("Ord du vil vite frekvens for?");
 		
-		String ord = tastatur.nextLine();
+//		String ord = tastatur.nextLine();
 		
 		for(String e : listeAvOrd) {
 			Integer k = fo.get(e);
@@ -30,14 +30,17 @@ public class Oppgave5 {
 				fo.put(e, k+1);
 			}
 		}
+		for(String e: fo.keySet()){
+		System.out.println(e);
+	}
 		
 		
-		Integer f = fo.get(ord);
-		int frekvens = 0;
-		if(f != null) {
-			frekvens = f;
-		}
-		System.out.println(ord + " Har frekvens " + frekvens);
+//		Integer f = fo.get(ord);
+//		int frekvens = 0;
+//		if(f != null) {
+//			frekvens = f;
+//		}
+//		System.out.println(ord + " Har frekvens " + frekvens);
 		
 	
 //	b lag frekvensoversikten

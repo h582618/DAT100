@@ -25,7 +25,7 @@ public class Oppgave4 {
 				if (brett[i][k] != 'I') {
 					System.out.print(brett[i][k]);
 				} else {
-					System.out.print("");
+					System.out.print(" ");
 				}
 
 			}
