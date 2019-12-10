@@ -34,13 +34,17 @@ public class Main5 {
 
 //		a
 		Scanner tastatur = new Scanner(System.in);
-		for(int i = 0; i < ListeAvOrd.size(); i++ ) {
+		Boolean exit = true;
+		while(exit){
 		
 		System.out.println("Ord du vil vite frekvens for");
 		
 		
 		String ord = tastatur.nextLine();
 		
+		if(ord.equals("exit")){
+			exit = false;
+		}
 		
 		Integer f = fo.get(ord);
 		int frekvens = 0;
