@@ -21,6 +21,7 @@ public class Universitet {
 		boolean fortsett = true;
 		
 		System.out.println("------------------------------");
+		
 		while(fortsett) {
 			System.out.println("Velkommen til Universitet sin Kommandolinje");
 			System.out.println("S = Legg til ny Student");

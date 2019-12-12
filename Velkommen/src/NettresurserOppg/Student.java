@@ -14,6 +14,7 @@ public void settInnKurs(Kurs k) {
 	
 	if(k != null && !kurs.contains(k)) {
 	  kurs.add(k);
+	  System.out.println("Kurs " + k + " lagt til");
       }
 }
 public void visKurs() {

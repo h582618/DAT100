@@ -1,4 +1,4 @@
-package EksamenøvingH2014;
+package EksamenøvingH14;
 
 import java.io.File;
 import java.io.FileNotFoundException;

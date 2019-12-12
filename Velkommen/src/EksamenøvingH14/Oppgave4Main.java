@@ -1,4 +1,4 @@
-package EksamenøvingH2014;
+package EksamenøvingH14;
 
 public class Oppgave4Main {
 
